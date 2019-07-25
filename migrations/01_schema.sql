@@ -6,6 +6,8 @@ DROP TABLE IF EXISTS reservations
 CASCADE;
 DROP TABLE IF EXISTS property_reviews;
 
+-- 在删除一个表时，如果该表的主键是另一个表的外键，如果不用cascade关键字就会报错
+
 CREATE TABLE users
 (
   id SERIAL PRIMARY KEY NOT NULL,
